@@ -61,25 +61,29 @@
 
 @media screen and (max-width: 800px) {
     .homebox{
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        
     }
 
     .homebox .qrbox{
-        width: 80vw;
-        height: 80vh;
+        width: 80%;
+        height: 80%;
+        margin: 4rem;
     }
 
     .homebox .qrbox .imgbox img{
-        width: 550px;
-        height: 600px;
-        margin-top: 1rem;
+        width: 90%;
+        height: 80%;
+        margin-top: 0;
+        object-fit: cover;
     }
 
     .homebox .qrbox .textbox{
         height: auto;
         display: flex;
-        gap: 2.5rem;
+        gap: 2rem;
         justify-content: center;
         align-items: center;
     }
