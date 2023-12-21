@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 2px solid red;
+}
+
+.homebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-radius: 1rem;
+    font-family: Outfit;
+    background-color: hsl(212, 45%, 89%)
+}
+
+.homebox .qrbox{
+    display: grid;
+    grid-template-rows: repeat(2, 0.5fr);
+    border-radius: 1rem; 
+    width: 400px;
+    gap: 0.5rem;
+    border: 2px solid none;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.homebox .qrbox .imgbox{
+    padding: 1.3rem 0;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homebox .qrbox .imgbox img{
+    border-radius: 1rem;
+    height: 400px;
+    width: 350px;
+}
+
+.homebox .qrbox .textbox{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.homebox .qrbox .textbox h3{
+    font-size: 1.8rem;
+    text-align: justify;
+    font-weight: 800;
+}
+
+.homebox .qrbox .textbox p{
+    opacity: 0.5;
+    font-size: 1.35rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .homebox{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .homebox .qrbox{
+        width: 80vw;
+        height: 80vh;
+    }
+
+    .homebox .qrbox .imgbox img{
+        width: 550px;
+        height: 600px;
+        margin-top: 1rem;
+    }
+
+    .homebox .qrbox .textbox{
+        height: auto;
+        display: flex;
+        gap: 2.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homebox .qrbox .textbox h3{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .homebox .qrbox .textbox p{
+        font-size: 2.5rem; 
+        opacity: 0.4;   
+    }
+
+}
