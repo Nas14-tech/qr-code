@@ -62,7 +62,7 @@
 @media screen and (max-width: 800px) {
     .homebox{
         width: 100%;
-        height: 100vh;
+        height: 100%;
         border-radius: 0;
         
     }
@@ -75,9 +75,6 @@
         position: relative;
     }
 
-    .homebox .qrbox .imgbox{
-        height: 100%;
-    }
 
     .homebox .qrbox .imgbox img{
         width: 90%;
