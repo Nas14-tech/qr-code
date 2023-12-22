@@ -27,6 +27,7 @@
 
 .homebox .qrbox .imgbox{
     padding: 1.3rem 0;
+    padding-bottom: 0;
     border-radius: 1rem;
     display: flex;
     align-items: center;
@@ -71,7 +72,7 @@
         width: 80%;
         height: auto;
         margin: 3rem;
-        gap: 2rem;
+        gap: 1rem;
         position: relative;
     }
 
@@ -85,12 +86,16 @@
 
     .homebox .qrbox .textbox{
         display: flex;
-        gap: 2rem;
-       
+        gap: 2rem;       
     }
 
     .homebox .qrbox .textbox h3{
         font-size: 1.8rem;
+        /* text-align: justify; */
+    }
+
+    .homebox .qrbox .textbox h3 br{
+        display: none;
     }
 
     .homebox .qrbox .textbox p{
